@@ -1,4 +1,49 @@
-    .popup {
+<doctype! html>
+  <html>
+    <head>
+    <script src="https://kit.fontawesome.com/55dba967ba.js" crossorigin="anonymous">
+    </script>
+    </head>
+<style>
+        h2{
+          text-align:;
+          }
+        .fullCard {
+         border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+        }
+        .cardContent {
+        padding: 10px;
+        }
+        body{
+          background-color:#F0F9FF;
+        }
+        .thin-black-border {
+        border-color: black;
+        border-width: 3px;
+        border-style: solid;
+        }
+        .lightblue-background{
+        background-color: #C5E4F6;
+        }
+        .button {
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        }
+        .button2{
+          border-radius:15px;
+          cursor:pointer;
+        }   
+        .button1:hover {
+        background-color: grey;
+        color: white;
+        }
+         .popup {
       position: relative;
       display: inline-block;
       cursor: pointer;
@@ -63,3 +108,37 @@
       popup.classList.toggle("show");
     }
   </script>
+<div class="fullcard">
+  <div class="cardcontent">
+    <h2 style="color:">Lista de Vehiculos</h2>
+      <p><input type="text" placeholder="Buscar" required>
+      <button title="Buscar">Buscar</button></p>
+      <p align="center"> 
+        <button type="button" title="Nuevo" class="button button1" style="color:red"> Nuevo </button></p>
+      <table class="thin-black-border" border>
+    <tbody>
+    <tr>
+    <th>Tipo</th>
+    <th>Modelo</th>
+    <th>Marca</th>
+    <th>Color</th>
+    <th>Precio</th>
+    <th>Stock</th>
+    <th>Accion</th>
+    </tr>
+    <tr>
+    <th></th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button class="button2" title="Editar"><i class="fas fa-edit"></i></button> 
+    <div class="popup" onclick="myFunction()"><button class="button2"><i class="fas fa-eye"></button></i>
+  <span class="popuptext" id="myPopup">Descripcion del Vehiculo:</span>
+</div>
+    <button class="button2" title="Eliminar"><i class="fas fa-trash-alt"></i></button></td>
+    </tr>
+  </div>
+</div>
+</html>
